@@ -13,8 +13,8 @@ jobs:
             - name: Cypress run
               uses: cypress-io/github-action@v5
               with:
-                  command: npx cypress run
                   browser: chrome
+                  headed: true
               env:
                   SPLIT: ${{ strategy.job-total }}
                   SPLIT_INDEX: ${{ strategy.job-index }}
