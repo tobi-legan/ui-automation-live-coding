@@ -9,4 +9,3 @@ jobs:
       browser: chrome
       headed: true
       marge: true
-      
