@@ -24,7 +24,9 @@ module.exports = defineConfig({
         runMode: 2,
         openMode: 0,
     },
-    
+    env: {
+        MAILOSAUR_API_KEY: "WguttN7DGiGOftq6",
+    },
 
     e2e: {
         setupNodeEvents(on, config) {
@@ -32,6 +34,6 @@ module.exports = defineConfig({
             return config;
         },
 
-        baseUrl: "http://alphapay.netlify.app",
+        baseUrl: "https://growth.deel.training/dev/salary-insights",
     },
 });
